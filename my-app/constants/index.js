@@ -1,5 +1,5 @@
 export const WHITELIST_CONTRACT_ADDRESS =
-    "0x3b2fE23aE581940a329158D37027784Fd6c95315";
+    "0x43D0296bF07fc5a316514F763EE9eeA82D2955D9";
 export const abi = [
     {
         inputs: [
@@ -14,7 +14,7 @@ export const abi = [
     },
     {
         inputs: [],
-        name: "addAddresstoWhitelist",
+        name: "addAddressToWhitelist",
         outputs: [],
         stateMutability: "nonpayable",
         type: "function",
@@ -40,6 +40,25 @@ export const abi = [
                 internalType: "uint8",
                 name: "",
                 type: "uint8",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "",
+                type: "address",
+            },
+        ],
+        name: "whitelistedAddresses",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
             },
         ],
         stateMutability: "view",
